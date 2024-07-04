@@ -1,0 +1,15 @@
+
+
+.carousel-inner .carousel-item img{
+height: 550px;
+}
+
+/* =====================================
+  4- Responsive Design (media query)
+======================================== */
+@media (max-width: 700px) {
+    .carousel-inner .carousel-item img{
+        height: 250px;
+        }
+  }
+  
