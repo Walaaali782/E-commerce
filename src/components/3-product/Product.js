@@ -72,11 +72,17 @@ const getdata = () => {
 
 
 
-            {pro.map((product) =>{
+             {pro.map((product) =>{
                 return(
-                    <div className="col-3" key={product.id}>
+                    <motion.div
+            
+                    layout
+                    animate={{ transform: "scale(1)" }}
+                    initial={{ transform: "scale(0)" }}
+                    transition={{ type: "spring" ,damping:8}}
+                     className="col-3" key={product.id}>
                       <List product={product}/>
-                 </div>
+                 </motion.div>
                 );
             }) }
 
